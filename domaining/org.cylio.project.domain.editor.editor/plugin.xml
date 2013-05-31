@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.cylio.project.domain.editor.presentation.EditorModelWizardID"
+            name="%_UI_EditorModelWizard_label"
+            class="org.cylio.project.domain.editor.presentation.EditorModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/EditorModelFile.gif">
+         <description>%_UI_EditorModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.cylio.project.domain.editor.presentation.EditorEditorID"
+            name="%_UI_EditorEditor_label"
+            icon="icons/full/obj16/EditorModelFile.gif"
+            extensions="editor"
+            class="org.cylio.project.domain.editor.presentation.EditorEditor"
+            contributorClass="org.cylio.project.domain.editor.presentation.EditorActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.cylio.project.domain.editor.domain.presentation.DomainModelWizardID"
+            name="%_UI_DomainModelWizard_label"
+            class="org.cylio.project.domain.editor.domain.presentation.DomainModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DomainModelFile.gif">
+         <description>%_UI_DomainModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.cylio.project.domain.editor.domain.presentation.DomainEditorID"
+            name="%_UI_DomainEditor_label"
+            icon="icons/full/obj16/DomainModelFile.gif"
+            extensions="domain"
+            class="org.cylio.project.domain.editor.domain.presentation.DomainEditor"
+            contributorClass="org.cylio.project.domain.editor.domain.presentation.DomainActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.cylio.project.domain.editor.area.presentation.AreaModelWizardID"
+            name="%_UI_AreaModelWizard_label"
+            class="org.cylio.project.domain.editor.area.presentation.AreaModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AreaModelFile.gif">
+         <description>%_UI_AreaModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.cylio.project.domain.editor.area.presentation.AreaEditorID"
+            name="%_UI_AreaEditor_label"
+            icon="icons/full/obj16/AreaModelFile.gif"
+            extensions="area"
+            class="org.cylio.project.domain.editor.area.presentation.AreaEditor"
+            contributorClass="org.cylio.project.domain.editor.area.presentation.AreaActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.cylio.project.domain.editor.data.presentation.DataModelWizardID"
+            name="%_UI_DataModelWizard_label"
+            class="org.cylio.project.domain.editor.data.presentation.DataModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DataModelFile.gif">
+         <description>%_UI_DataModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.cylio.project.domain.editor.data.presentation.DataEditorID"
+            name="%_UI_DataEditor_label"
+            icon="icons/full/obj16/DataModelFile.gif"
+            extensions="data"
+            class="org.cylio.project.domain.editor.data.presentation.DataEditor"
+            contributorClass="org.cylio.project.domain.editor.data.presentation.DataActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.cylio.project.domain.editor.services.presentation.ServicesModelWizardID"
+            name="%_UI_ServicesModelWizard_label"
+            class="org.cylio.project.domain.editor.services.presentation.ServicesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ServicesModelFile.gif">
+         <description>%_UI_ServicesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.cylio.project.domain.editor.services.presentation.ServicesEditorID"
+            name="%_UI_ServicesEditor_label"
+            icon="icons/full/obj16/ServicesModelFile.gif"
+            extensions="services"
+            class="org.cylio.project.domain.editor.services.presentation.ServicesEditor"
+            contributorClass="org.cylio.project.domain.editor.services.presentation.ServicesActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.cylio.project.domain.editor.software.presentation.SoftwareModelWizardID"
+            name="%_UI_SoftwareModelWizard_label"
+            class="org.cylio.project.domain.editor.software.presentation.SoftwareModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SoftwareModelFile.gif">
+         <description>%_UI_SoftwareModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.cylio.project.domain.editor.software.presentation.SoftwareEditorID"
+            name="%_UI_SoftwareEditor_label"
+            icon="icons/full/obj16/SoftwareModelFile.gif"
+            extensions="software"
+            class="org.cylio.project.domain.editor.software.presentation.SoftwareEditor"
+            contributorClass="org.cylio.project.domain.editor.software.presentation.SoftwareActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

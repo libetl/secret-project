@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.cylio.project.domain.editor/src"
+    modelPluginID="org.cylio.project.domain.editor" modelName="Org.cylio.project.domain"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>org.cylio.project.domain.editor.ecore</foreignModel>
+  <genPackages prefix="Editor" basePackage="org.cylio.project.domain" disposableProviderFactory="true"
+      ecorePackage="org.cylio.project.domain.editor.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="org.cylio.project.domain.editor.ecore#//Status">
+      <genEnumLiterals ecoreEnumLiteral="org.cylio.project.domain.editor.ecore#//Status/PRODUCTION"/>
+      <genEnumLiterals ecoreEnumLiteral="org.cylio.project.domain.editor.ecore#//Status/PROJECT"/>
+      <genEnumLiterals ecoreEnumLiteral="org.cylio.project.domain.editor.ecore#//Status/INITIATIVE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="org.cylio.project.domain.editor.ecore#//Color">
+      <genEnumLiterals ecoreEnumLiteral="org.cylio.project.domain.editor.ecore#//Color/RED"/>
+      <genEnumLiterals ecoreEnumLiteral="org.cylio.project.domain.editor.ecore#//Color/GREEN"/>
+      <genEnumLiterals ecoreEnumLiteral="org.cylio.project.domain.editor.ecore#//Color/BLUE"/>
+      <genEnumLiterals ecoreEnumLiteral="org.cylio.project.domain.editor.ecore#//Color/YELLOW"/>
+      <genEnumLiterals ecoreEnumLiteral="org.cylio.project.domain.editor.ecore#//Color/BROWN"/>
+      <genEnumLiterals ecoreEnumLiteral="org.cylio.project.domain.editor.ecore#//Color/PINK"/>
+      <genEnumLiterals ecoreEnumLiteral="org.cylio.project.domain.editor.ecore#//Color/PURPLE"/>
+      <genEnumLiterals ecoreEnumLiteral="org.cylio.project.domain.editor.ecore#//Color/GREY"/>
+      <genEnumLiterals ecoreEnumLiteral="org.cylio.project.domain.editor.ecore#//Color/BLACK"/>
+    </genEnums>
+    <genClasses ecoreClass="org.cylio.project.domain.editor.ecore#//InformationSystem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference org.cylio.project.domain.editor.ecore#//InformationSystem/businessDomains"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.cylio.project.domain.editor.ecore#//InformationSystem/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="org.cylio.project.domain.editor.ecore#//Domain">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.cylio.project.domain.editor.ecore#//Domain/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.cylio.project.domain.editor.ecore#//Domain/creationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.cylio.project.domain.editor.ecore#//Domain/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.cylio.project.domain.editor.ecore#//Domain/color"/>
+    </genClasses>
+    <genClasses ecoreClass="org.cylio.project.domain.editor.ecore#//SubDomain">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference org.cylio.project.domain.editor.ecore#//SubDomain/subDomains"/>
+    </genClasses>
+    <genClasses ecoreClass="org.cylio.project.domain.editor.ecore#//Area">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.cylio.project.domain.editor.ecore#//Area/purpose"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference org.cylio.project.domain.editor.ecore#//Area/businessInformationsNotUsed"/>
+    </genClasses>
+    <genClasses ecoreClass="org.cylio.project.domain.editor.ecore#//BusinessInformation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.cylio.project.domain.editor.ecore#//BusinessInformation/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.cylio.project.domain.editor.ecore#//BusinessInformation/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.cylio.project.domain.editor.ecore#//BusinessInformation/tags"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

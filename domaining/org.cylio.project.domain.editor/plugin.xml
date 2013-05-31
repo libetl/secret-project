@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://callisto.blizzart.net/redmine/projects/ccu-lbe#editor"
+            class="org.cylio.project.domain.editor.EditorPackage"
+            genModel="model/org.cylio.project.domain.editor.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://callisto.blizzart.net/redmine/projects/ccu-lbe#domain"
+            class="org.cylio.project.domain.editor.domain.DomainPackage"
+            genModel="model/org.cylio.project.domain.editor.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://callisto.blizzart.net/redmine/projects/ccu-lbe#util"
+            class="org.cylio.project.domain.editor.util.UtilPackage"
+            genModel="model/org.cylio.project.domain.editor.genmodel"/>
+   </extension>
+
+</plugin>

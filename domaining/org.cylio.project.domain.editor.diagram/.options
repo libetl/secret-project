@@ -1,0 +1,7 @@
+# Tracing options for the org.cylio.project.domain.editor.diagram plug-in
+
+# Common issues
+org.cylio.project.domain.editor.diagram/debug=false
+
+# Visual IDs
+org.cylio.project.domain.editor.diagram/debug/visualID=false
