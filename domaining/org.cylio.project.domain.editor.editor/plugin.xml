@@ -8,7 +8,9 @@
  $Id$
 -->
 
-<plugin>
+<plugin id="org.cylio.project.domain.editor.editor"
+            name="cylio project domain editor"
+            version="1">
 
    <extension point="org.eclipse.ui.newWizards">
       <category
